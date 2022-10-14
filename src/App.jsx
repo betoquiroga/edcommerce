@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 function App() {
 
@@ -22,7 +23,9 @@ function App() {
         { products.map(prod => (
           <div key={prod.id}>
             <div>
-              <img src={prod.images[0]} alt={prod.product_name} />
+              <Link to={`/productos/${prod.id}`}>
+                <img src={prod.images[0]} alt={prod.product_name} />
+              </Link>
               <h2>{prod.product_name}</h2>
             </div>
           </div>
