@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => setNombre("Juanito")}>Click me!!!</button>
+      <button onClick={() => setNombre("Juanito")}>DALE CLICK!!! Es de chill!</button>
       <p>{nombre}</p>
       <div className="grid grid-cols-5 gap-6">
         { products.map(prod => (
